@@ -55,6 +55,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="j2b-yO-EC3"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="iVl-8C-NrC" kind="show" id="AX4-xP-HNv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1SP-eR-K0o"/>
@@ -240,7 +243,7 @@
                                     <constraint firstAttribute="width" constant="43" id="UFm-7i-otb"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="T3O-yk-lU4" kind="show" id="VyK-iw-zwE"/>
+                                    <segue destination="UUH-6J-FFq" kind="show" id="HmT-Il-TXx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOI-74-AUd">
@@ -409,7 +412,7 @@
                                     <constraint firstAttribute="height" constant="48" id="thy-9x-B5a"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="T3O-yk-lU4" kind="show" id="TVp-eZ-NKw"/>
+                                    <segue destination="UUH-6J-FFq" kind="show" id="e56-mn-uHc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -501,6 +504,9 @@
                                     <constraint firstAttribute="width" constant="43" id="hja-cV-hYJ"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="xZP-Ax-B7L"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="UUH-6J-FFq" kind="show" id="9NE-Yq-Fps"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rtQ-Go-wg3"/>
@@ -1136,20 +1142,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="finished_frame" translatesAutoresizingMaskIntoConstraints="NO" id="NZz-as-F5G">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90Z-39-MTS">
-                                <rect key="frame" x="45" y="123" width="323" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90Z-39-MTS">
+                                <rect key="frame" x="45" y="120" width="323" height="55"/>
                                 <connections>
-                                    <segue destination="T3O-yk-lU4" kind="show" id="Pq9-ul-Tcb"/>
+                                    <segue destination="UUH-6J-FFq" kind="show" id="zAV-Jy-9vl"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr8-vJ-iCm">
+                                <rect key="frame" x="172" y="688" width="76" height="56"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0nV-1W-Bvf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hr8-vJ-iCm" firstAttribute="leading" secondItem="0nV-1W-Bvf" secondAttribute="leading" constant="172" id="7M2-gC-sm4"/>
+                            <constraint firstItem="0nV-1W-Bvf" firstAttribute="trailing" secondItem="hr8-vJ-iCm" secondAttribute="trailing" constant="166" id="DEV-M3-AAu"/>
                             <constraint firstItem="NZz-as-F5G" firstAttribute="leading" secondItem="Zin-10-ewI" secondAttribute="leading" id="IBE-fN-bTY"/>
                             <constraint firstAttribute="trailing" secondItem="NZz-as-F5G" secondAttribute="trailing" id="Ztt-Jg-Xjc"/>
                             <constraint firstItem="NZz-as-F5G" firstAttribute="top" secondItem="Zin-10-ewI" secondAttribute="top" id="kjK-7K-ZKe"/>
+                            <constraint firstItem="hr8-vJ-iCm" firstAttribute="top" secondItem="90Z-39-MTS" secondAttribute="bottom" constant="550" id="tSQ-se-oaV"/>
+                            <constraint firstItem="0nV-1W-Bvf" firstAttribute="bottom" secondItem="hr8-vJ-iCm" secondAttribute="bottom" constant="64" id="u3M-gv-R6v"/>
                             <constraint firstAttribute="bottom" secondItem="NZz-as-F5G" secondAttribute="bottom" id="um7-Z4-1ar"/>
                         </constraints>
                     </view>
@@ -1157,7 +1169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEQ-Fx-AIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4586" y="951"/>
+            <point key="canvasLocation" x="4585.507246376812" y="950.89285714285711"/>
         </scene>
         <!--Final Task Completed View Controller-->
         <scene sceneID="K6M-bO-YiQ">
@@ -1259,17 +1271,18 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kae-PT-7pU"/>
+        <segue reference="94V-VW-tii"/>
         <segue reference="D4z-D0-5Lf"/>
         <segue reference="2HM-p8-bcn"/>
         <segue reference="Y9b-6F-qzy"/>
         <segue reference="T3z-jT-zyH"/>
-        <segue reference="UUH-HK-kpy"/>
-        <segue reference="ljf-ct-3WP"/>
+        <segue reference="AX4-xP-HNv"/>
+        <segue reference="kKJ-ZV-pDZ"/>
+        <segue reference="t2x-eq-Qpx"/>
         <segue reference="H1f-q4-gcJ"/>
-        <segue reference="Ktt-CZ-J2M"/>
-        <segue reference="G5L-0e-Ipq"/>
-        <segue reference="tnU-85-mCD"/>
+        <segue reference="poN-LO-6Zq"/>
+        <segue reference="YL4-F7-FyG"/>
+        <segue reference="zAV-Jy-9vl"/>
         <segue reference="vkI-yU-dlz"/>
     </inferredMetricsTieBreakers>
     <resources>
